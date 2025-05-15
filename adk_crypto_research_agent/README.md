@@ -1,7 +1,4 @@
-adk_crypto_research_agent
-
-
-
+```mermaid
 flowchart TD
     A["Start Job via /start_job"] --> B{"Payment Verified via Masumi"}
     B -- No --> B1["Wait or Fail Job"]
