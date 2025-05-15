@@ -13,17 +13,19 @@ flowchart TD
     C3 --> D3[Site/docs content]
     C4 --> D4[RAG: Retrieved whitepaper context]
 
-    C --> E[PriceChartAgent (ToolAgent)]
-    C --> F[TVLChartAgent (ToolAgent)]
-    C --> G[CorrelationChartAgent (ToolAgent)]
+    D1 --> E[PriceChartAgent (ToolAgent)]
+    D2 --> F[TVLChartAgent (ToolAgent)]
+    D1 --> G[CorrelationChartAgent (ToolAgent)]
 
     E --> E1[Price chart PNG]
     F --> F1[TVL chart PNG]
     G --> G1[Correlation heatmap PNG]
 
-    C --> H1[VolatilityAgent (LlmAgent)]
-    C --> H2[SectorTrendAgent (LlmAgent)]
-    C --> H3[TokenComparatorAgent (LlmAgent)]
+    D1 --> H1[VolatilityAgent (LlmAgent)]
+    D1 --> H2[SectorTrendAgent (LlmAgent)]
+    D2 --> H2
+    D3 --> H2
+    D1 --> H3[TokenComparatorAgent (LlmAgent)]
 
     H1 --> H1out[Volatility summary]
     H2 --> H2out[Sector insights]
