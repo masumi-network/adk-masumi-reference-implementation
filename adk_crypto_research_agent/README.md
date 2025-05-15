@@ -2,7 +2,7 @@ flowchart TD
     A[Start Job via /start_job] --> B{Payment Verified via Masumi}
     B -- No --> B1[Wait or Fail Job]
     B -- Yes --> C[CoordinatorAgent (LlmAgent)]
-    
+
     C --> C1[MarketDataAgent (ToolAgent)]
     C --> C2[TVLAgent (ToolAgent)]
     C --> C3[FirecrawlAgent (ToolAgent)]
