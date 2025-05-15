@@ -30,7 +30,16 @@ flowchart TD
     H3 --> H3out[Comparative metrics]
 
     C --> I[WriterAgent (LlmAgent)]
-    D1 & D2 & D3 & D4 & E1 & F1 & G1 & H1out & H2out & H3out --> I
+    D1 --> I
+    D2 --> I
+    D3 --> I
+    D4 --> I
+    E1 --> I
+    F1 --> I
+    G1 --> I
+    H1out --> I
+    H2out --> I
+    H3out --> I
 
     I --> J[Markdown report sections]
     C --> K[AssemblerAgent (ToolAgent)]
